@@ -5,6 +5,7 @@ services:
     environment:
       TZ: 'America/Montevideo'
       WEBPASSWORD: ${WEBPASSWORD}
+    network: host
     ports:
       - "53:53/tcp"
       - "53:53/udp"
